@@ -1,0 +1,16 @@
+.c-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 16px;
+    background: #CE0033;
+}
+
+.c-header__content {
+    max-width: 1268px;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 54px;
+}

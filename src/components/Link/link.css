@@ -1,0 +1,14 @@
+.c-link {
+    color: #FFF;
+    /* font-family: Poppins; */
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.c-link:hover {
+    text-decoration: underline;
+}
+
+.c-link--active {
+    font-weight: 700;
+}
