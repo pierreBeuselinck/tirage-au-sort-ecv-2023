@@ -8,6 +8,13 @@
     font-weight: 700;
     min-height: 75px;
     padding: 0 64px;
+    border: 1px solid #CE0033;
+    cursor: pointer;
+}
+
+.c-button:hover {
+    color: #CE0033;
+    background : #fff;
 }
 
 .c-button--small {
