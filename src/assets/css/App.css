@@ -98,6 +98,10 @@ body {
 
 /* Utilitaire */
 
+.u-text-center {
+  text-align: center;
+}
+
 
 .u-font-700 {
   font-weight: 700;

@@ -19,14 +19,16 @@ function HomePage() {
         <Button text="🎰 Sélectionner une personne 🎰" onClick={handleWinnerSelection} />
       </div>
       <div className='l-homepage__result'>
-        <p className='l-homepage__result-name'>{winnerName}🌸</p>
-        <p>
-        {winnerName && (
-          <p>
-            Tu es l{winnerGender === 'femme' ? 'a' : 'e'} grand{winnerGender === 'femme' ? 'e' : ''} gagnant{winnerGender === 'femme' ? 'e' : ''}
-          </p>
+        {winnerName ? (
+          <div className='u-text-center'>
+            <p className='l-homepage__result-name'>{winnerName}🌸</p>
+            <p>
+              Tu es l{winnerGender === 'femme' ? 'a' : 'e'} grand{winnerGender === 'femme' ? 'e' : ''} gagnant{winnerGender === 'femme' ? 'e' : ''}
+            </p>
+          </div>
+        ) : (
+          <p>Personne n’a été sélectionné actuellement 👀</p>
         )}
-        </p>
       </div>
     </div>
   );
