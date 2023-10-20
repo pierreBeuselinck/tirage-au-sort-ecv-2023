@@ -62,7 +62,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage handleTirageAuSort={handleTirageAuSort} gagnantPhrase={gagnantPhrase} />} />
-          <Route path="/absents" element={<AbsentPage />} />
+          <Route path="/absents" element={<AbsentPage peoples={peoples} />} />
         </Routes>
         <Footer />
       </div>

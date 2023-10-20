@@ -5,6 +5,7 @@ function AbsentPage() {
   return (
     <div className="l-absent">
       <div className="u-flex-fluid u-width-100">
+        {/* <Dropdown options={peoples} /> */}
         <Dropdown />
         <div className="u-mt-32">
           <Button text="Ajouter" isSmall />
