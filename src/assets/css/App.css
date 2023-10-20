@@ -1,3 +1,17 @@
+/* Fonts
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Body */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F0F0;
+}
+
+/* Page : Homepage */
+
 .l-homepage {
   display: flex;
   flex-direction: column;
@@ -26,3 +40,20 @@
   font-weight: 700;
 }
 
+/* Page : Absents */
+
+.l-absent {
+  display: flex;
+  margin: 112px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  gap: 16px;
+}
+
+.l-absent__divider {
+  width: 2px;
+  min-height: 619px;
+  flex-shrink: 0;
+  background: #D9D9D9;
+  border: none;
+}
