@@ -71,7 +71,33 @@ body {
   margin: 0 90px;
 }
 
+.l-absent__list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.l-absent__btn-sup {
+  background-color: #D9D9D9;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+.l-absent__btn-sup svg {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+}
+
 /* Utilitaire */
+
 
 .u-font-700 {
   font-weight: 700;
