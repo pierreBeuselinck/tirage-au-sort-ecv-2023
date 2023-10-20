@@ -73,6 +73,10 @@ body {
 
 /* Utilitaire */
 
+.u-font-700 {
+  font-weight: 700;
+}
+
 .u-flex-fluid {
   flex : 1;
 }
