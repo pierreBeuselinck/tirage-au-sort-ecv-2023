@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from '../Button/Button';
+import  { StudentContext }  from '../../StudentContext'
 import './dropdown.css';
 
-function Dropdown({ students, onAddAbsentee, absentStudents }) {
+function Dropdown() {
   const [selectedStudent, setSelectedStudent] = useState('');
+  const [students, , absentStudents, setAbsentStudents] = useContext(StudentContext);
 
   const handleAddAbsentee = () => {
     if (!absentStudents.includes(selectedStudent)) {
-      onAddAbsentee(selectedStudent);
+      setAbsentStudents([...absentStudents, selectedStudent]);
     }
   };
 

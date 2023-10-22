@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from '../components/Button/Button';
-import students from '../data/students';
+import { StudentContext } from '../StudentContext';
 
 function HomePage() {
   const [winnerName, setWinnerName] = useState('');
   const [winnerGender, setWinnerGender] = useState('');
 
+  const [students, , absentStudents] = useContext(StudentContext);
+
   const handleWinnerSelection = () => {
-    const randomIndex = Math.floor(Math.random() * students.length);
-    const winner = students[randomIndex];
+    const presentStudents = students.filter(student => !absentStudents.includes(student.name));
+    const randomIndex = Math.floor(Math.random() * presentStudents.length);
+    const winner = presentStudents[randomIndex];
     setWinnerName(winner.name);
     setWinnerGender(winner.genre);
   };
+
 
   return (
     <div className='l-homepage'>

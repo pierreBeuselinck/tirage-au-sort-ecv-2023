@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import Dropdown from "../components/Dropdowns/Dropdown";
-import studentsData from '../data/students';
+import { StudentContext } from '../StudentContext';
 
 function AbsentPage() {
-  const [absentStudents, setAbsentStudents] = useState([]);
-  const [students, setStudents] = useState(studentsData);
+  const [students, , absentStudents, setAbsentStudents] = useContext(StudentContext);
 
   const handleAddAbsentee = (studentName) => {
     if (!absentStudents.includes(studentName)) {
